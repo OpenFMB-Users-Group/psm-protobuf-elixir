@@ -1,20 +1,22 @@
 defmodule Openfmb.Solarmodule.SolarInverter do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapabilityConfiguration do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :sourceCapabilityConfiguration, 1,
     type: Openfmb.Commonmodule.SourceCapabilityConfiguration,
     deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapabilityOverride do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 
@@ -22,9 +24,10 @@ defmodule Openfmb.Solarmodule.SolarCapabilityOverride do
     type: Openfmb.Solarmodule.SolarCapabilityConfiguration,
     deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapabilityOverrideProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :capabilityOverrideMessageInfo, 1,
     type: Openfmb.Commonmodule.CapabilityOverrideMessageInfo,
@@ -33,31 +36,35 @@ defmodule Openfmb.Solarmodule.SolarCapabilityOverrideProfile do
   field :solarCapabilityOverride, 2, type: Openfmb.Solarmodule.SolarCapabilityOverride, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapabilityRatings do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :sourceCapabilityRatings, 1, type: Openfmb.Commonmodule.SourceCapabilityRatings, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapability do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :nameplateValue, 1, type: Openfmb.Commonmodule.NameplateValue, deprecated: false
   field :solarCapabilityConfiguration, 2, type: Openfmb.Solarmodule.SolarCapabilityConfiguration
   field :solarCapabilityRatings, 3, type: Openfmb.Solarmodule.SolarCapabilityRatings, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarCapabilityProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
   field :solarCapability, 2, type: Openfmb.Solarmodule.SolarCapability, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :frequencySetPointEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
   field :mode, 2, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
@@ -83,44 +90,50 @@ defmodule Openfmb.Solarmodule.SolarPoint do
   field :blackStartEnabled, 22, type: Openfmb.Commonmodule.ControlSPC
   field :syncBackToGrid, 23, type: Openfmb.Commonmodule.ControlSPC
 end
+
 defmodule Openfmb.Solarmodule.SolarCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Solarmodule.SolarPoint, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarControlScheduleFSCH do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :ValDCSG, 1, type: Openfmb.Solarmodule.SolarCSG, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarControlFSCC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlFSCC, 1, type: Openfmb.Commonmodule.ControlFSCC, deprecated: false
   field :SolarControlScheduleFSCH, 2, type: Openfmb.Solarmodule.SolarControlScheduleFSCH
 end
+
 defmodule Openfmb.Solarmodule.SolarControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
   field :solarControlFSCC, 3, type: Openfmb.Solarmodule.SolarControlFSCC
 end
+
 defmodule Openfmb.Solarmodule.SolarControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :solarControl, 2, type: Openfmb.Solarmodule.SolarControl, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarPointStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :frequencySetPointEnabled, 1, type: Openfmb.Commonmodule.StatusSPS
   field :mode, 2, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
@@ -144,9 +157,10 @@ defmodule Openfmb.Solarmodule.SolarPointStatus do
   field :voltWOperation, 20, type: Openfmb.Commonmodule.VoltWCSG
   field :wVarOperation, 21, type: Openfmb.Commonmodule.WVarCSG
 end
+
 defmodule Openfmb.Solarmodule.SolarEventAndStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -162,31 +176,35 @@ defmodule Openfmb.Solarmodule.SolarEventAndStatusZGEN do
   field :ManAlrmInfo, 9, type: Google.Protobuf.StringValue
   field :OperatingState, 10, type: Openfmb.Commonmodule.Optional_OperatingStateKind
 end
+
 defmodule Openfmb.Solarmodule.SolarEventZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :solarEventAndStatusZGEN, 1, type: Openfmb.Solarmodule.SolarEventAndStatusZGEN, deprecated: false
   field :GriMod, 2, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
 end
+
 defmodule Openfmb.Solarmodule.SolarEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :eventValue, 1, type: Openfmb.Commonmodule.EventValue, deprecated: false
   field :solarEventZGEN, 2, type: Openfmb.Solarmodule.SolarEventZGEN
 end
+
 defmodule Openfmb.Solarmodule.SolarEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :solarEvent, 2, type: Openfmb.Solarmodule.SolarEvent, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :conductingEquipmentTerminalReading, 1,
     type: Openfmb.Commonmodule.ConductingEquipmentTerminalReading,
@@ -196,31 +214,35 @@ defmodule Openfmb.Solarmodule.SolarReading do
   field :readingMMTR, 3, type: Openfmb.Commonmodule.ReadingMMTR
   field :readingMMXU, 4, type: Openfmb.Commonmodule.ReadingMMXU
 end
+
 defmodule Openfmb.Solarmodule.SolarReadingProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :readingMessageInfo, 1, type: Openfmb.Commonmodule.ReadingMessageInfo, deprecated: false
   field :solarInverter, 2, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
   field :solarReading, 3, type: Openfmb.Solarmodule.SolarReading, deprecated: false
 end
+
 defmodule Openfmb.Solarmodule.SolarStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :solarEventAndStatusZGEN, 1, type: Openfmb.Solarmodule.SolarEventAndStatusZGEN, deprecated: false
   field :GriMod, 2, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
 end
+
 defmodule Openfmb.Solarmodule.SolarStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :statusValue, 1, type: Openfmb.Commonmodule.StatusValue, deprecated: false
   field :solarStatusZGEN, 2, type: Openfmb.Solarmodule.SolarStatusZGEN
 end
+
 defmodule Openfmb.Solarmodule.SolarStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :solarInverter, 2, type: Openfmb.Solarmodule.SolarInverter, deprecated: false

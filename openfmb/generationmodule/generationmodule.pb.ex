@@ -1,21 +1,23 @@
 defmodule Openfmb.Generationmodule.GeneratingUnit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
   field :maxOperatingP, 2, type: Openfmb.Commonmodule.ActivePower
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapabilityConfiguration do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :sourceCapabilityConfiguration, 1,
     type: Openfmb.Commonmodule.SourceCapabilityConfiguration,
     deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapabilityOverride do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 
@@ -23,9 +25,10 @@ defmodule Openfmb.Generationmodule.GenerationCapabilityOverride do
     type: Openfmb.Generationmodule.GenerationCapabilityConfiguration,
     deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapabilityOverrideProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :capabilityOverrideMessageInfo, 1,
     type: Openfmb.Commonmodule.CapabilityOverrideMessageInfo,
@@ -37,15 +40,17 @@ defmodule Openfmb.Generationmodule.GenerationCapabilityOverrideProfile do
 
   field :generatingUnit, 3, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapabilityRatings do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :sourceCapabilityRatings, 1, type: Openfmb.Commonmodule.SourceCapabilityRatings, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapability do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :nameplateValue, 1, type: Openfmb.Commonmodule.NameplateValue, deprecated: false
 
@@ -56,17 +61,19 @@ defmodule Openfmb.Generationmodule.GenerationCapability do
   field :generationCapabilityConfiguration, 3,
     type: Openfmb.Generationmodule.GenerationCapabilityConfiguration
 end
+
 defmodule Openfmb.Generationmodule.GenerationCapabilityProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
   field :generationCapability, 2, type: Openfmb.Generationmodule.GenerationCapability, deprecated: false
   field :generatingUnit, 3, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
   field :frequencySetPointEnabled, 2, type: Openfmb.Commonmodule.ControlSPC
@@ -92,60 +99,68 @@ defmodule Openfmb.Generationmodule.GenerationPoint do
   field :voltWOperation, 22, type: Openfmb.Commonmodule.VoltWCSG
   field :wVarOperation, 23, type: Openfmb.Commonmodule.WVarCSG
 end
+
 defmodule Openfmb.Generationmodule.GenerationCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Generationmodule.GenerationPoint, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationControlScheduleFSCH do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :ValDCSG, 1, type: Openfmb.Generationmodule.GenerationCSG, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationControlFSCC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlFSCC, 1, type: Openfmb.Commonmodule.ControlFSCC, deprecated: false
   field :GenerationControlScheduleFSCH, 2, type: Openfmb.Generationmodule.GenerationControlScheduleFSCH
 end
+
 defmodule Openfmb.Generationmodule.GenerationControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
   field :generationControlFSCC, 3, type: Openfmb.Generationmodule.GenerationControlFSCC
 end
+
 defmodule Openfmb.Generationmodule.GenerationControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :generatingUnit, 2, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
   field :generationControl, 3, type: Openfmb.Generationmodule.GenerationControl, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.DroopParameter do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :slope, 1, type: Google.Protobuf.FloatValue
   field :unloadedOffset, 2, type: Google.Protobuf.FloatValue
 end
+
 defmodule Openfmb.Generationmodule.RealPowerControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :droopSetpoint, 1, type: Openfmb.Generationmodule.DroopParameter
   field :isochronousSetpoint, 2, type: Google.Protobuf.FloatValue
   field :realPowerControlMode, 3, type: Openfmb.Commonmodule.Optional_RealPowerControlKind
   field :realPowerSetpoint, 4, type: Google.Protobuf.FloatValue
 end
+
 defmodule Openfmb.Generationmodule.ReactivePowerControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :droopSetpoint, 1, type: Openfmb.Generationmodule.DroopParameter
   field :powerFactorSetpoint, 2, type: Google.Protobuf.FloatValue
@@ -153,18 +168,20 @@ defmodule Openfmb.Generationmodule.ReactivePowerControl do
   field :reactivePowerSetpoint, 4, type: Google.Protobuf.FloatValue
   field :voltageSetpoint, 5, type: Google.Protobuf.FloatValue
 end
+
 defmodule Openfmb.Generationmodule.GenerationDiscreteControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
   field :ReactivePowerControl, 3, type: Openfmb.Generationmodule.ReactivePowerControl
   field :RealPowerControl, 4, type: Openfmb.Generationmodule.RealPowerControl
 end
+
 defmodule Openfmb.Generationmodule.GenerationDiscreteControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :generatingUnit, 2, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
@@ -173,9 +190,10 @@ defmodule Openfmb.Generationmodule.GenerationDiscreteControlProfile do
     type: Openfmb.Generationmodule.GenerationDiscreteControl,
     deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :conductingEquipmentTerminalReading, 1,
     type: Openfmb.Commonmodule.ConductingEquipmentTerminalReading,
@@ -185,17 +203,19 @@ defmodule Openfmb.Generationmodule.GenerationReading do
   field :readingMMTR, 3, type: Openfmb.Commonmodule.ReadingMMTR
   field :readingMMXU, 4, type: Openfmb.Commonmodule.ReadingMMXU
 end
+
 defmodule Openfmb.Generationmodule.GenerationReadingProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :readingMessageInfo, 1, type: Openfmb.Commonmodule.ReadingMessageInfo, deprecated: false
   field :generatingUnit, 2, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
   field :generationReading, 3, type: Openfmb.Generationmodule.GenerationReading, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationPointStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.StatusSPS
   field :frequencySetPointEnabled, 2, type: Openfmb.Commonmodule.StatusSPS
@@ -219,9 +239,10 @@ defmodule Openfmb.Generationmodule.GenerationPointStatus do
   field :voltWOperation, 20, type: Openfmb.Commonmodule.VoltWCSG
   field :wVarOperation, 21, type: Openfmb.Commonmodule.WVarCSG
 end
+
 defmodule Openfmb.Generationmodule.GenerationEventAndStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -237,47 +258,53 @@ defmodule Openfmb.Generationmodule.GenerationEventAndStatusZGEN do
   field :ManAlrmInfo, 9, type: Google.Protobuf.StringValue
   field :OperatingState, 10, type: Openfmb.Commonmodule.Optional_OperatingStateKind
 end
+
 defmodule Openfmb.Generationmodule.GenerationEventZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :generationEventAndStatusZGEN, 1,
     type: Openfmb.Generationmodule.GenerationEventAndStatusZGEN,
     deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :eventValue, 1, type: Openfmb.Commonmodule.EventValue, deprecated: false
   field :generationEventZGEN, 2, type: Openfmb.Generationmodule.GenerationEventZGEN
 end
+
 defmodule Openfmb.Generationmodule.GenerationEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :generatingUnit, 2, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
   field :generationEvent, 3, type: Openfmb.Generationmodule.GenerationEvent, deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :generationEventAndStatusZGEN, 1,
     type: Openfmb.Generationmodule.GenerationEventAndStatusZGEN,
     deprecated: false
 end
+
 defmodule Openfmb.Generationmodule.GenerationStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :statusValue, 1, type: Openfmb.Commonmodule.StatusValue, deprecated: false
   field :generationStatusZGEN, 2, type: Openfmb.Generationmodule.GenerationStatusZGEN
 end
+
 defmodule Openfmb.Generationmodule.GenerationStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :generatingUnit, 2, type: Openfmb.Generationmodule.GeneratingUnit, deprecated: false
