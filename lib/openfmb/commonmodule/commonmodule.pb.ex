@@ -1291,14 +1291,6 @@ defmodule Openfmb.Commonmodule.OperationDWVR do
   field :modEna, 1, type: :bool, deprecated: false
 end
 
-defmodule Openfmb.Commonmodule.OperationStorageDFPF do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :operationDFPF, 1, type: Openfmb.Commonmodule.OperationDFPF, deprecated: false
-  field :pFLodTgtMxVal, 2, type: :float, deprecated: false
-end
-
 defmodule Openfmb.Commonmodule.OptimizationMessageInfo do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
@@ -1312,14 +1304,6 @@ defmodule Openfmb.Commonmodule.PFSPC do
 
   field :ctlVal, 1, type: :bool, deprecated: false
   field :pFParameter, 2, type: Openfmb.Commonmodule.OperationDFPF, deprecated: false
-end
-
-defmodule Openfmb.Commonmodule.PFStorageSPC do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :ctlVal, 1, type: :bool, deprecated: false
-  field :pFStorageParameter, 2, type: Openfmb.Commonmodule.OperationStorageDFPF, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.PhaseAPC do

@@ -138,7 +138,7 @@ defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentStatusProfile do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
+  field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :applicationSystem, 2, type: Openfmb.Commonmodule.ApplicationSystem, deprecated: false
 
   field :circuitSegmentStatus, 3,

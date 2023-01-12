@@ -180,7 +180,7 @@ defmodule Openfmb.Essmodule.ESSPoint do
   field :enterServiceOperation, 16, type: Openfmb.Commonmodule.EnterServiceAPC
   field :hzWOperation, 17, type: Openfmb.Commonmodule.HzWAPC
   field :limitWOperation, 18, type: Openfmb.Commonmodule.LimitWAPC
-  field :pFStorageOperation, 19, type: Openfmb.Commonmodule.PFStorageSPC
+  field :pFOperation, 19, type: Openfmb.Commonmodule.PFSPC
   field :tmHzTripOperation, 20, type: Openfmb.Commonmodule.TmHzCSG
   field :tmVoltTripOperation, 21, type: Openfmb.Commonmodule.TmVoltCSG
   field :vArOperation, 22, type: Openfmb.Commonmodule.VarSPC
@@ -229,6 +229,32 @@ defmodule Openfmb.Essmodule.ESSControlProfile do
   field :essControl, 3, type: Openfmb.Essmodule.ESSControl, deprecated: false
 end
 
+defmodule Openfmb.Essmodule.ESSDiscreteControlDBAT do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
+  field :control, 2, type: Openfmb.Essmodule.ESSPoint
+end
+
+defmodule Openfmb.Essmodule.ESSDiscreteControl do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
+  field :check, 2, type: Openfmb.Commonmodule.CheckConditions
+  field :essDiscreteControlDBAT, 3, type: Openfmb.Essmodule.ESSDiscreteControlDBAT
+end
+
+defmodule Openfmb.Essmodule.ESSDiscreteControlProfile do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
+  field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
+  field :essDiscreteControl, 3, type: Openfmb.Essmodule.ESSDiscreteControl, deprecated: false
+end
+
 defmodule Openfmb.Essmodule.EssEventZBAT do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
@@ -266,7 +292,7 @@ defmodule Openfmb.Essmodule.ESSPointStatus do
   field :enterServiceOperation, 14, type: Openfmb.Commonmodule.EnterServiceAPC
   field :hzWOperation, 15, type: Openfmb.Commonmodule.HzWAPC
   field :limitWOperation, 16, type: Openfmb.Commonmodule.LimitWAPC
-  field :pFStorageOperation, 17, type: Openfmb.Commonmodule.PFStorageSPC
+  field :pFOperation, 17, type: Openfmb.Commonmodule.PFSPC
   field :tmHzTripOperation, 18, type: Openfmb.Commonmodule.TmHzCSG
   field :tmVoltTripOperation, 19, type: Openfmb.Commonmodule.TmVoltCSG
   field :vArOperation, 20, type: Openfmb.Commonmodule.VarSPC
