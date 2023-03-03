@@ -697,13 +697,6 @@ defmodule Openfmb.Commonmodule.CapabilityMessageInfo do
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
-defmodule Openfmb.Commonmodule.CapabilityOverrideMessageInfo do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
-end
-
 defmodule Openfmb.Commonmodule.CheckConditions do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
@@ -1075,9 +1068,9 @@ defmodule Openfmb.Commonmodule.OperationDCTE do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :rndDlTmms, 1, type: :float, deprecated: false
-  field :rtnDlTmms, 2, type: :float, deprecated: false
-  field :rtnRmpTmms, 3, type: :float, deprecated: false
+  field :rndDlTmms, 1, type: Openfmb.Commonmodule.ControlING, deprecated: false
+  field :rtnDlTmms, 2, type: Openfmb.Commonmodule.ControlING, deprecated: false
+  field :rtnRmpTmms, 3, type: Openfmb.Commonmodule.ControlING, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.EnterServiceAPC do
@@ -1273,7 +1266,7 @@ defmodule Openfmb.Commonmodule.OperationDVVR do
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
   field :VRef, 3, type: :float, deprecated: false
   field :VRefAdjEna, 4, type: :bool, deprecated: false
-  field :VRefTmms, 5, type: :float, deprecated: false
+  field :VRefTmms, 5, type: Openfmb.Commonmodule.ControlING, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OperationDVWC do
@@ -1282,6 +1275,13 @@ defmodule Openfmb.Commonmodule.OperationDVWC do
 
   field :modEna, 1, type: :bool, deprecated: false
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
+end
+
+defmodule Openfmb.Commonmodule.OperationDWGC do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :wSpt, 1, type: :float, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OperationDWVR do
@@ -1713,6 +1713,14 @@ defmodule Openfmb.Commonmodule.VSC do
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :ctlVal, 1, type: :string, deprecated: false
+end
+
+defmodule Openfmb.Commonmodule.WSPC do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :modEna, 1, type: :bool, deprecated: false
+  field :wParameter, 2, type: Openfmb.Commonmodule.OperationDWGC, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.WVarPoint do

@@ -163,20 +163,12 @@ defmodule Openfmb.Essmodule.ESSPoint do
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
-  field :frequencySetPointEnabled, 2, type: Openfmb.Commonmodule.ControlSPC
   field :function, 3, type: Openfmb.Essmodule.ESSFunction
   field :mode, 4, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
-  field :pctHzDroop, 5, type: Google.Protobuf.FloatValue
-  field :pctVDroop, 6, type: Google.Protobuf.FloatValue
   field :rampRates, 7, type: Openfmb.Commonmodule.RampRate
-  field :reactivePwrSetPointEnabled, 8, type: Openfmb.Commonmodule.ControlSPC
-  field :realPwrSetPointEnabled, 9, type: Openfmb.Commonmodule.ControlSPC
   field :reset, 10, type: Openfmb.Commonmodule.ControlSPC
   field :state, 11, type: Openfmb.Commonmodule.Optional_StateKind
-  field :syncBackToGrid, 12, type: Openfmb.Commonmodule.ControlSPC
   field :transToIslndOnGridLossEnabled, 13, type: Openfmb.Commonmodule.ControlSPC
-  field :voltageSetPointEnabled, 14, type: Openfmb.Commonmodule.ControlSPC
-  field :startTime, 15, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
   field :enterServiceOperation, 16, type: Openfmb.Commonmodule.EnterServiceAPC
   field :hzWOperation, 17, type: Openfmb.Commonmodule.HzWAPC
   field :limitWOperation, 18, type: Openfmb.Commonmodule.LimitWAPC
@@ -187,13 +179,22 @@ defmodule Openfmb.Essmodule.ESSPoint do
   field :voltVarOperation, 23, type: Openfmb.Commonmodule.VoltVarCSG
   field :voltWOperation, 24, type: Openfmb.Commonmodule.VoltWCSG
   field :wVarOperation, 25, type: Openfmb.Commonmodule.WVarCSG
+  field :wOperation, 26, type: Openfmb.Commonmodule.WSPC
+end
+
+defmodule Openfmb.Essmodule.ESSCurvePoint do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :control, 1, type: Openfmb.Essmodule.ESSPoint, deprecated: false
+  field :startTime, 2, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.ESSCSG do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :crvPts, 1, repeated: true, type: Openfmb.Essmodule.ESSPoint, deprecated: false
+  field :crvPts, 1, repeated: true, type: Openfmb.Essmodule.ESSCurvePoint, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.ESSControlScheduleFSCH do

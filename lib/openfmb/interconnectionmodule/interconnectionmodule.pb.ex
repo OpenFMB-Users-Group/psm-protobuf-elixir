@@ -55,7 +55,7 @@ defmodule Openfmb.Interconnectionmodule.InterconnectionSchedule do
     deprecated: false
 end
 
-defmodule Openfmb.Interconnectionmodule.PlannedInterconnectionScheduleProfile do
+defmodule Openfmb.Interconnectionmodule.InterconnectionPlannedScheduleProfile do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
@@ -76,7 +76,7 @@ defmodule Openfmb.Interconnectionmodule.PlannedInterconnectionScheduleProfile do
     deprecated: false
 end
 
-defmodule Openfmb.Interconnectionmodule.RequestedInterconnectionScheduleProfile do
+defmodule Openfmb.Interconnectionmodule.InterconnectionRequestedScheduleProfile do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 

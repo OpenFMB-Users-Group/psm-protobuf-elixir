@@ -30,9 +30,7 @@ defmodule Openfmb.Generationmodule.GenerationCapabilityOverrideProfile do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :capabilityOverrideMessageInfo, 1,
-    type: Openfmb.Commonmodule.CapabilityOverrideMessageInfo,
-    deprecated: false
+  field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
 
   field :generationCapabilityOverride, 2,
     type: Openfmb.Generationmodule.GenerationCapabilityOverride,

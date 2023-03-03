@@ -29,10 +29,7 @@ defmodule Openfmb.Solarmodule.SolarCapabilityOverrideProfile do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :capabilityOverrideMessageInfo, 1,
-    type: Openfmb.Commonmodule.CapabilityOverrideMessageInfo,
-    deprecated: false
-
+  field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
   field :solarCapabilityOverride, 2, type: Openfmb.Solarmodule.SolarCapabilityOverride, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
@@ -66,17 +63,10 @@ defmodule Openfmb.Solarmodule.SolarPoint do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :frequencySetPointEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
   field :mode, 2, type: Openfmb.Commonmodule.ENG_GridConnectModeKind
-  field :pctHzDroop, 3, type: Google.Protobuf.FloatValue
-  field :pctVDroop, 4, type: Google.Protobuf.FloatValue
   field :rampRates, 5, type: Openfmb.Commonmodule.RampRate
-  field :reactivePwrSetPointEnabled, 6, type: Openfmb.Commonmodule.ControlSPC
-  field :realPwrSetPointEnabled, 7, type: Openfmb.Commonmodule.ControlSPC
   field :reset, 8, type: Openfmb.Commonmodule.ControlSPC
   field :state, 9, type: Openfmb.Commonmodule.Optional_StateKind
-  field :voltageSetPointEnabled, 10, type: Openfmb.Commonmodule.ControlSPC
-  field :startTime, 11, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
   field :enterServiceOperation, 12, type: Openfmb.Commonmodule.EnterServiceAPC
   field :hzWOperation, 13, type: Openfmb.Commonmodule.HzWAPC
   field :limitWOperation, 14, type: Openfmb.Commonmodule.LimitWAPC
@@ -88,14 +78,22 @@ defmodule Openfmb.Solarmodule.SolarPoint do
   field :voltWOperation, 20, type: Openfmb.Commonmodule.VoltWCSG
   field :wVarOperation, 21, type: Openfmb.Commonmodule.WVarCSG
   field :blackStartEnabled, 22, type: Openfmb.Commonmodule.ControlSPC
-  field :syncBackToGrid, 23, type: Openfmb.Commonmodule.ControlSPC
+  field :wOperation, 24, type: Openfmb.Commonmodule.WSPC
+end
+
+defmodule Openfmb.Solarmodule.SolarCurvePoint do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :control, 1, type: Openfmb.Solarmodule.SolarPoint, deprecated: false
+  field :startTime, 2, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
 end
 
 defmodule Openfmb.Solarmodule.SolarCSG do
   @moduledoc false
   use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :crvPts, 1, repeated: true, type: Openfmb.Solarmodule.SolarPoint, deprecated: false
+  field :crvPts, 1, repeated: true, type: Openfmb.Solarmodule.SolarCurvePoint, deprecated: false
 end
 
 defmodule Openfmb.Solarmodule.SolarControlScheduleFSCH do
@@ -128,6 +126,32 @@ defmodule Openfmb.Solarmodule.SolarControlProfile do
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :solarControl, 2, type: Openfmb.Solarmodule.SolarControl, deprecated: false
+  field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
+end
+
+defmodule Openfmb.Solarmodule.SolarDiscreteControlPV do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
+  field :control, 2, type: Openfmb.Solarmodule.SolarPoint
+end
+
+defmodule Openfmb.Solarmodule.SolarDiscreteControl do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
+  field :check, 2, type: Openfmb.Commonmodule.CheckConditions
+  field :solarDiscreteControlPV, 3, type: Openfmb.Solarmodule.SolarDiscreteControlPV
+end
+
+defmodule Openfmb.Solarmodule.SolarDiscreteControlProfile do
+  @moduledoc false
+  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
+  field :solarDiscreteControl, 2, type: Openfmb.Solarmodule.SolarDiscreteControl, deprecated: false
   field :solarInverter, 3, type: Openfmb.Solarmodule.SolarInverter, deprecated: false
 end
 
