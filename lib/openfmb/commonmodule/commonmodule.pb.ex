@@ -1479,6 +1479,7 @@ defmodule Openfmb.Commonmodule.WYE do
   field :phsA, 3, type: Openfmb.Commonmodule.CMV
   field :phsB, 4, type: Openfmb.Commonmodule.CMV
   field :phsC, 5, type: Openfmb.Commonmodule.CMV
+  field :res, 6, type: Openfmb.Commonmodule.CMV
 end
 
 defmodule Openfmb.Commonmodule.ReadingMMXU do
