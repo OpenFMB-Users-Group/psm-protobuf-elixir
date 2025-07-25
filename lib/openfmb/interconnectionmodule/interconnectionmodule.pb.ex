@@ -1,6 +1,7 @@
 defmodule Openfmb.Interconnectionmodule.InterconnectionPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
   field :frequencySetPointEnabled, 2, type: Openfmb.Commonmodule.ControlSPC
@@ -16,7 +17,8 @@ end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1,
     repeated: true,
@@ -26,14 +28,16 @@ end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionControlScheduleFSCH do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ValDCSG, 1, type: Openfmb.Interconnectionmodule.InterconnectionCSG, deprecated: false
 end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionScheduleFSCC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlFSCC, 1, type: Openfmb.Commonmodule.ControlFSCC, deprecated: false
 
@@ -45,7 +49,8 @@ end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionSchedule do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -57,7 +62,8 @@ end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionPlannedScheduleProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
 
@@ -78,7 +84,8 @@ end
 
 defmodule Openfmb.Interconnectionmodule.InterconnectionRequestedScheduleProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
 

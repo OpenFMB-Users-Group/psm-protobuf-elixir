@@ -1,6 +1,7 @@
 defmodule Openfmb.Switchmodule.SwitchDiscreteControlXSWI do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
   field :Pos, 2, type: Openfmb.Commonmodule.PhaseDPC
@@ -9,7 +10,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchDiscreteControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -18,14 +20,16 @@ end
 
 defmodule Openfmb.Switchmodule.ProtectedSwitch do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
 end
 
 defmodule Openfmb.Switchmodule.SwitchDiscreteControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :protectedSwitch, 2, type: Openfmb.Switchmodule.ProtectedSwitch, deprecated: false
@@ -34,7 +38,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchEventXSWI do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -46,7 +51,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventValue, 1, type: Openfmb.Commonmodule.EventValue, deprecated: false
   field :switchEventXSWI, 2, type: Openfmb.Switchmodule.SwitchEventXSWI
@@ -54,7 +60,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :protectedSwitch, 2, type: Openfmb.Switchmodule.ProtectedSwitch, deprecated: false
@@ -63,7 +70,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipmentTerminalReading, 1,
     type: Openfmb.Commonmodule.ConductingEquipmentTerminalReading,
@@ -73,11 +81,13 @@ defmodule Openfmb.Switchmodule.SwitchReading do
   field :phaseMMTN, 3, type: Openfmb.Commonmodule.PhaseMMTN
   field :readingMMTR, 4, type: Openfmb.Commonmodule.ReadingMMTR
   field :readingMMXU, 5, type: Openfmb.Commonmodule.ReadingMMXU
+  field :readingMMDC, 6, type: Openfmb.Commonmodule.ReadingMMDC
 end
 
 defmodule Openfmb.Switchmodule.SwitchReadingProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :readingMessageInfo, 1, type: Openfmb.Commonmodule.ReadingMessageInfo, deprecated: false
   field :protectedSwitch, 2, type: Openfmb.Switchmodule.ProtectedSwitch, deprecated: false
@@ -86,7 +96,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchStatusXSWI do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -99,7 +110,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusValue, 1, type: Openfmb.Commonmodule.StatusValue, deprecated: false
   field :switchStatusXSWI, 2, type: Openfmb.Switchmodule.SwitchStatusXSWI
@@ -107,7 +119,8 @@ end
 
 defmodule Openfmb.Switchmodule.SwitchStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :protectedSwitch, 2, type: Openfmb.Switchmodule.ProtectedSwitch, deprecated: false

@@ -1,6 +1,7 @@
 defmodule Openfmb.Commonmodule.FaultDirectionKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :FaultDirectionKind_UNDEFINED, 0
   field :FaultDirectionKind_unknown, 1
@@ -11,7 +12,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseFaultDirectionKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :PhaseFaultDirectionKind_UNDEFINED, 0
   field :PhaseFaultDirectionKind_unknown, 1
@@ -21,7 +23,8 @@ end
 
 defmodule Openfmb.Commonmodule.UnitSymbolKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :UnitSymbolKind_none, 0
   field :UnitSymbolKind_meter, 2
@@ -62,7 +65,8 @@ end
 
 defmodule Openfmb.Commonmodule.UnitMultiplierKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :UnitMultiplierKind_UNDEFINED, 0
   field :UnitMultiplierKind_none, 1
@@ -81,7 +85,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseCodeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :PhaseCodeKind_none, 0
   field :PhaseCodeKind_other, 1
@@ -110,7 +115,8 @@ end
 
 defmodule Openfmb.Commonmodule.ValidityKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ValidityKind_UNDEFINED, 0
   field :ValidityKind_good, 1
@@ -121,7 +127,8 @@ end
 
 defmodule Openfmb.Commonmodule.SourceKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :SourceKind_UNDEFINED, 0
   field :SourceKind_process, 1
@@ -130,7 +137,8 @@ end
 
 defmodule Openfmb.Commonmodule.TimeAccuracyKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :TimeAccuracyKind_UNDEFINED, 0
   field :TimeAccuracyKind_T0, 7
@@ -144,7 +152,8 @@ end
 
 defmodule Openfmb.Commonmodule.ScheduleParameterKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ScheduleParameterKind_UNDEFINED, 0
   field :ScheduleParameterKind_none, 1
@@ -195,7 +204,8 @@ end
 
 defmodule Openfmb.Commonmodule.CalcMethodKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :CalcMethodKind_UNDEFINED, 0
   field :CalcMethodKind_P_CLASS, 11
@@ -205,7 +215,8 @@ end
 
 defmodule Openfmb.Commonmodule.GridConnectModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :GridConnectModeKind_UNDEFINED, 0
   field :GridConnectModeKind_CSI, 1
@@ -220,7 +231,8 @@ end
 
 defmodule Openfmb.Commonmodule.PFSignKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :PFSignKind_UNDEFINED, 0
   field :PFSignKind_IEC, 1
@@ -229,7 +241,8 @@ end
 
 defmodule Openfmb.Commonmodule.BehaviourModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :BehaviourModeKind_UNDEFINED, 0
   field :BehaviourModeKind_on, 1
@@ -241,7 +254,8 @@ end
 
 defmodule Openfmb.Commonmodule.DERGeneratorStateKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :DERGeneratorStateKind_UNDEFINED, 0
   field :DERGeneratorStateKind_Not_operating, 1
@@ -258,7 +272,8 @@ end
 
 defmodule Openfmb.Commonmodule.DynamicTestKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :DynamicTestKind_UNDEFINED, 0
   field :DynamicTestKind_none, 1
@@ -269,7 +284,8 @@ end
 
 defmodule Openfmb.Commonmodule.HealthKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :HealthKind_UNDEFINED, 0
   field :HealthKind_none, 1
@@ -280,7 +296,8 @@ end
 
 defmodule Openfmb.Commonmodule.SwitchingCapabilityKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :SwitchingCapabilityKind_UNDEFINED, 0
   field :SwitchingCapabilityKind_none, 1
@@ -291,7 +308,8 @@ end
 
 defmodule Openfmb.Commonmodule.DbPosKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :DbPosKind_UNDEFINED, 0
   field :DbPosKind_transient, 1
@@ -302,7 +320,8 @@ end
 
 defmodule Openfmb.Commonmodule.RecloseActionKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :RecloseActionKind_UNDEFINED, 0
   field :RecloseActionKind_idle, 1
@@ -312,7 +331,8 @@ end
 
 defmodule Openfmb.Commonmodule.NorOpCatKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :NorOpCatKind_UNDEFINED, 0
   field :NorOpCatKind_A, 1
@@ -321,7 +341,8 @@ end
 
 defmodule Openfmb.Commonmodule.AbnOpCatKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :AbnOpCatKind_UNDEFINED, 0
   field :AbnOpCatKind_I, 1
@@ -331,7 +352,8 @@ end
 
 defmodule Openfmb.Commonmodule.AlrmKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :AlrmKind_ground_fault, 0
   field :AlrmKind_dc_over_voltage, 1
@@ -354,7 +376,8 @@ end
 
 defmodule Openfmb.Commonmodule.ControlModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ControlModeKind_UNDEFINED, 0
   field :ControlModeKind_auto, 1
@@ -365,7 +388,8 @@ end
 
 defmodule Openfmb.Commonmodule.DirectionModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :DirectionModeKind_UNDEFINED, 0
   field :DirectionModeKind_locked_forward, 1
@@ -382,7 +406,8 @@ end
 
 defmodule Openfmb.Commonmodule.GridConnectionStateKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :GridConnectionStateKind_disconnected, 0
   field :GridConnectionStateKind_connected, 1
@@ -390,7 +415,8 @@ end
 
 defmodule Openfmb.Commonmodule.OperatingStateKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :OperatingStateKind_UNDEFINED, 0
   field :OperatingStateKind_off, 1
@@ -410,7 +436,8 @@ end
 
 defmodule Openfmb.Commonmodule.ReactivePowerControlKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ReactivePowerControlKind_UNDEFINED, 0
   field :ReactivePowerControlKind_advanced, 1
@@ -422,7 +449,8 @@ end
 
 defmodule Openfmb.Commonmodule.RealPowerControlKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :RealPowerControlKind_UNDEFINED, 0
   field :RealPowerControlKind_advanced, 1
@@ -433,7 +461,8 @@ end
 
 defmodule Openfmb.Commonmodule.StateKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :StateKind_UNDEFINED, 0
   field :StateKind_off, 1
@@ -443,7 +472,8 @@ end
 
 defmodule Openfmb.Commonmodule.VoltLimitModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :VoltLimitModeKind_UNDEFINED, 0
   field :VoltLimitModeKind_off, 1
@@ -457,21 +487,24 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_FaultDirectionKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.FaultDirectionKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_PhaseFaultDirectionKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.PhaseFaultDirectionKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ACD do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :dirGeneral, 1, type: Openfmb.Commonmodule.FaultDirectionKind, enum: true, deprecated: false
   field :dirNeut, 2, type: Openfmb.Commonmodule.Optional_PhaseFaultDirectionKind
@@ -487,7 +520,8 @@ end
 
 defmodule Openfmb.Commonmodule.IdentifiedObject do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :description, 1, type: Google.Protobuf.StringValue
   field :mRID, 2, type: Google.Protobuf.StringValue, deprecated: false
@@ -496,7 +530,8 @@ end
 
 defmodule Openfmb.Commonmodule.ACDCTerminal do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :connected, 2, type: Google.Protobuf.BoolValue
@@ -505,21 +540,24 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_UnitSymbolKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.UnitSymbolKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_UnitMultiplierKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.UnitMultiplierKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ActivePower do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :multiplier, 1, type: Openfmb.Commonmodule.Optional_UnitMultiplierKind
   field :unit, 2, type: Openfmb.Commonmodule.Optional_UnitSymbolKind
@@ -528,14 +566,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_PhaseCodeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.PhaseCodeKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Unit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :multiplier, 1, type: Openfmb.Commonmodule.Optional_UnitMultiplierKind
   field :SIUnit, 2, type: Openfmb.Commonmodule.UnitSymbolKind, enum: true, deprecated: false
@@ -543,14 +583,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_ValidityKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.ValidityKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.DetailQual do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :badReference, 1, type: :bool, deprecated: false
   field :failure, 2, type: :bool, deprecated: false
@@ -564,14 +606,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_SourceKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.SourceKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Quality do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :detailQual, 1, type: Openfmb.Commonmodule.DetailQual, deprecated: false
   field :operatorBlocked, 2, type: :bool, deprecated: false
@@ -582,14 +626,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_TimeAccuracyKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.TimeAccuracyKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.TimeQuality do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :clockFailure, 1, type: :bool, deprecated: false
   field :clockNotSynchronized, 2, type: :bool, deprecated: false
@@ -599,7 +645,8 @@ end
 
 defmodule Openfmb.Commonmodule.Timestamp do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :seconds, 2, type: :uint64, deprecated: false
   field :tq, 3, type: Openfmb.Commonmodule.TimeQuality
@@ -608,7 +655,8 @@ end
 
 defmodule Openfmb.Commonmodule.MV do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :mag, 1, type: :double, deprecated: false
   field :q, 2, type: Openfmb.Commonmodule.Quality
@@ -618,14 +666,16 @@ end
 
 defmodule Openfmb.Commonmodule.LogicalNode do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.AnalogEventAndStatusGGIO do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :AnIn, 2, type: Openfmb.Commonmodule.MV, deprecated: false
@@ -634,7 +684,8 @@ end
 
 defmodule Openfmb.Commonmodule.NamedObject do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :description, 1, type: Google.Protobuf.StringValue
   field :name, 2, type: Google.Protobuf.StringValue
@@ -642,7 +693,8 @@ end
 
 defmodule Openfmb.Commonmodule.ApplicationSystem do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :namedObject, 1, type: Openfmb.Commonmodule.NamedObject, deprecated: false
   field :mRID, 2, type: :string, deprecated: false
@@ -650,14 +702,16 @@ end
 
 defmodule Openfmb.Commonmodule.ASG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setMag, 1, type: :double, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.BCR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :actVal, 1, type: :int64, deprecated: false
   field :q, 2, type: Openfmb.Commonmodule.Quality
@@ -666,7 +720,8 @@ end
 
 defmodule Openfmb.Commonmodule.StatusSPS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: :bool, deprecated: false
@@ -675,7 +730,8 @@ end
 
 defmodule Openfmb.Commonmodule.BooleanEventAndStatusGGIO do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :Ind, 2, type: Openfmb.Commonmodule.StatusSPS, deprecated: false
@@ -684,7 +740,8 @@ end
 
 defmodule Openfmb.Commonmodule.MessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :messageTimeStamp, 2, type: Openfmb.Commonmodule.Timestamp, deprecated: false
@@ -692,14 +749,26 @@ end
 
 defmodule Openfmb.Commonmodule.CapabilityMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.CapacityFirming do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :capacityFirmingCtl, 1, type: Google.Protobuf.BoolValue
+  field :limitNegative_dp_dt, 2, type: Google.Protobuf.FloatValue, json_name: "limitNegativeDpDt"
+  field :limitPositive_dp_dt, 3, type: Google.Protobuf.FloatValue, json_name: "limitPositiveDpDt"
+end
+
 defmodule Openfmb.Commonmodule.CheckConditions do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :interlockCheck, 1, type: Google.Protobuf.BoolValue
   field :synchroCheck, 2, type: Google.Protobuf.BoolValue
@@ -707,7 +776,8 @@ end
 
 defmodule Openfmb.Commonmodule.ClearingTime do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :seconds, 2, type: :uint64, deprecated: false
   field :nanoseconds, 3, type: :uint32, deprecated: false
@@ -715,7 +785,8 @@ end
 
 defmodule Openfmb.Commonmodule.Vector do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ang, 1, type: Google.Protobuf.DoubleValue
   field :mag, 2, type: :double, deprecated: false
@@ -723,7 +794,8 @@ end
 
 defmodule Openfmb.Commonmodule.CMV do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :cVal, 1, type: Openfmb.Commonmodule.Vector, deprecated: false
   field :q, 2, type: Openfmb.Commonmodule.Quality
@@ -732,7 +804,8 @@ end
 
 defmodule Openfmb.Commonmodule.ConductingEquipment do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :namedObject, 1, type: Openfmb.Commonmodule.NamedObject, deprecated: false
   field :mRID, 2, type: :string, deprecated: false
@@ -740,7 +813,8 @@ end
 
 defmodule Openfmb.Commonmodule.Terminal do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :aCDCTerminal, 1, type: Openfmb.Commonmodule.ACDCTerminal, deprecated: false
   field :phases, 2, type: Openfmb.Commonmodule.Optional_PhaseCodeKind
@@ -748,28 +822,32 @@ end
 
 defmodule Openfmb.Commonmodule.ConductingEquipmentTerminalReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :terminal, 1, type: Openfmb.Commonmodule.Terminal, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlAPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :double, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlDPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :bool, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlTimestamp do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :seconds, 2, type: :uint64, deprecated: false
   field :nanoseconds, 3, type: :uint32, deprecated: false
@@ -777,14 +855,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_ScheduleParameterKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.ScheduleParameterKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENG_ScheduleParameter do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :scheduleParameterType, 1,
     type: Openfmb.Commonmodule.ScheduleParameterKind,
@@ -796,7 +876,8 @@ end
 
 defmodule Openfmb.Commonmodule.SchedulePoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :scheduleParameter, 1,
     repeated: true,
@@ -808,28 +889,32 @@ end
 
 defmodule Openfmb.Commonmodule.ScheduleCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :schPts, 1, repeated: true, type: Openfmb.Commonmodule.SchedulePoint, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlScheduleFSCH do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ValACSG, 1, type: Openfmb.Commonmodule.ScheduleCSG, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.LogicalNodeForControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlFSCC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
   field :controlScheduleFSCH, 2, type: Openfmb.Commonmodule.ControlScheduleFSCH
@@ -838,14 +923,16 @@ end
 
 defmodule Openfmb.Commonmodule.ControlINC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :int32, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlING do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setVal, 1, type: :int32, deprecated: false
   field :units, 2, type: Openfmb.Commonmodule.Unit
@@ -853,28 +940,32 @@ end
 
 defmodule Openfmb.Commonmodule.ControlISC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :int32, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlSPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :bool, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ControlValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :modBlk, 3, type: Google.Protobuf.BoolValue
@@ -883,7 +974,8 @@ end
 
 defmodule Openfmb.Commonmodule.CumulativeTime do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :seconds, 2, type: :uint64, deprecated: false
   field :nanoseconds, 3, type: :uint32, deprecated: false
@@ -891,7 +983,8 @@ end
 
 defmodule Openfmb.Commonmodule.DateTimeInterval do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :end, 1, type: Google.Protobuf.Int64Value
   field :start, 2, type: Google.Protobuf.Int64Value
@@ -899,7 +992,8 @@ end
 
 defmodule Openfmb.Commonmodule.DEL do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phsAB, 1, type: Openfmb.Commonmodule.CMV
   field :phsBC, 2, type: Openfmb.Commonmodule.CMV
@@ -908,7 +1002,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseDPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.ControlDPC
   field :phsA, 2, type: Openfmb.Commonmodule.ControlDPC
@@ -918,7 +1013,8 @@ end
 
 defmodule Openfmb.Commonmodule.DiscreteControlXCBR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
   field :Pos, 2, type: Openfmb.Commonmodule.PhaseDPC
@@ -929,7 +1025,8 @@ end
 
 defmodule Openfmb.Commonmodule.EnergyConsumer do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
   field :operatingLimit, 2, type: Google.Protobuf.StringValue
@@ -937,28 +1034,32 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_CalcMethodKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.CalcMethodKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENG_CalcMethodKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setVal, 1, type: Openfmb.Commonmodule.CalcMethodKind, enum: true, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.Optional_GridConnectModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.GridConnectModeKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENG_GridConnectModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setVal, 1, type: Openfmb.Commonmodule.GridConnectModeKind, enum: true, deprecated: false
   field :setValExtension, 2, type: Google.Protobuf.StringValue
@@ -966,28 +1067,32 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_PFSignKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.PFSignKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENG_PFSignKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setVal, 1, type: Openfmb.Commonmodule.PFSignKind, enum: true, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.Optional_BehaviourModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.BehaviourModeKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENS_BehaviourModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: Openfmb.Commonmodule.BehaviourModeKind, enum: true, deprecated: false
@@ -996,14 +1101,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_DERGeneratorStateKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.DERGeneratorStateKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENS_DERGeneratorStateKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: Openfmb.Commonmodule.DERGeneratorStateKind, enum: true, deprecated: false
@@ -1012,14 +1119,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_DynamicTestKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.DynamicTestKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENS_DynamicTestKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: Openfmb.Commonmodule.DynamicTestKind, enum: true, deprecated: false
@@ -1028,7 +1137,8 @@ end
 
 defmodule Openfmb.Commonmodule.ENS_GridConnectModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :stVal, 1, type: Openfmb.Commonmodule.GridConnectModeKind, enum: true, deprecated: false
   field :stValExtension, 2, type: :string, deprecated: false
@@ -1036,14 +1146,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_HealthKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.HealthKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENS_HealthKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :d, 1, type: Google.Protobuf.StringValue
   field :stVal, 2, type: Openfmb.Commonmodule.HealthKind, enum: true, deprecated: false
@@ -1051,14 +1163,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_SwitchingCapabilityKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.SwitchingCapabilityKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.ENS_SwitchingCapabilityKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :blkEna, 1, type: Google.Protobuf.BoolValue
   field :stVal, 2, type: Openfmb.Commonmodule.SwitchingCapabilityKind, enum: true, deprecated: false
@@ -1066,7 +1180,8 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDCTE do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :rndDlTmms, 1, type: Openfmb.Commonmodule.ControlING, deprecated: false
   field :rtnDlTmms, 2, type: Openfmb.Commonmodule.ControlING, deprecated: false
@@ -1075,7 +1190,8 @@ end
 
 defmodule Openfmb.Commonmodule.EnterServiceAPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :enterServiceParameter, 1, type: Openfmb.Commonmodule.OperationDCTE, deprecated: false
   field :hzHiLim, 2, type: :float, deprecated: false
@@ -1087,21 +1203,24 @@ end
 
 defmodule Openfmb.Commonmodule.ESS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.EventMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.EventValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :modBlk, 2, type: Google.Protobuf.BoolValue
@@ -1109,14 +1228,16 @@ end
 
 defmodule Openfmb.Commonmodule.ForecastValueSource do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.ForecastIED do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :forecastValueSource, 1, type: Openfmb.Commonmodule.ForecastValueSource, deprecated: false
   field :sourceApplicationID, 2, type: :string, deprecated: false
@@ -1125,14 +1246,31 @@ end
 
 defmodule Openfmb.Commonmodule.ForecastValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.FrequencyRegulation do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :frequencyDeadBandMinus, 1, type: Google.Protobuf.FloatValue
+  field :frequencyDeadBandPlus, 2, type: Google.Protobuf.FloatValue
+  field :frequencyRegulationCtl, 3, type: Google.Protobuf.BoolValue
+  field :frequencySetPoint, 4, type: Google.Protobuf.FloatValue
+  field :gridFrequencyStableBandMinus, 5, type: Google.Protobuf.FloatValue
+  field :gridFrequencyStableBandPlus, 6, type: Google.Protobuf.FloatValue
+  field :overFrequencyDroop, 7, type: Google.Protobuf.FloatValue
+  field :underFrequencyDroop, 8, type: Google.Protobuf.FloatValue
+end
+
 defmodule Openfmb.Commonmodule.OperationDHFW do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
@@ -1140,7 +1278,8 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDLFW do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
@@ -1148,7 +1287,8 @@ end
 
 defmodule Openfmb.Commonmodule.HzWPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :deadbandHzVal, 1, type: :float, deprecated: false
   field :slopeVal, 2, type: :float, deprecated: false
@@ -1156,7 +1296,8 @@ end
 
 defmodule Openfmb.Commonmodule.HzWAPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :overHzWPt, 1, type: Openfmb.Commonmodule.HzWPoint, deprecated: false
   field :overHzWParameter, 2, type: Openfmb.Commonmodule.OperationDHFW, deprecated: false
@@ -1166,7 +1307,8 @@ end
 
 defmodule Openfmb.Commonmodule.StatusINS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: :int32, deprecated: false
@@ -1175,7 +1317,8 @@ end
 
 defmodule Openfmb.Commonmodule.IntegerEventAndStatusGGIO do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :IntIn, 2, type: Openfmb.Commonmodule.StatusINS, deprecated: false
@@ -1184,21 +1327,24 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDWMX do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OperationDWMN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.LimitWAPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :maxLimParameter, 1, type: Openfmb.Commonmodule.OperationDWMX, deprecated: false
   field :minLimParameter, 2, type: Openfmb.Commonmodule.OperationDWMN, deprecated: false
@@ -1208,7 +1354,8 @@ end
 
 defmodule Openfmb.Commonmodule.LogicalNodeForEventAndStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :Beh, 2, type: Openfmb.Commonmodule.ENS_BehaviourModeKind
@@ -1219,21 +1366,24 @@ end
 
 defmodule Openfmb.Commonmodule.MeasurementValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.Meter do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.NameplateValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :model, 2, type: Google.Protobuf.StringValue
@@ -1244,7 +1394,8 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDFPF do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :pFExtSet, 2, type: :bool, deprecated: false
@@ -1253,14 +1404,16 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDVAR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :varTgtSpt, 1, type: :float, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OperationDVVR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
@@ -1271,7 +1424,8 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDVWC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :OplTmmsMax, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
@@ -1279,28 +1433,44 @@ end
 
 defmodule Openfmb.Commonmodule.OperationDWGC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :wSpt, 1, type: :float, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OperationDWVR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.OptimizationMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.PeakShaving do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :baseShavingLimit, 1, type: Google.Protobuf.FloatValue
+  field :peakShavingCtl, 2, type: Google.Protobuf.BoolValue
+  field :peakShavingLimit, 3, type: Google.Protobuf.FloatValue
+  field :socManagementAllowedHighLimit, 4, type: Google.Protobuf.FloatValue
+  field :socManagementAllowedLowLimit, 5, type: Google.Protobuf.FloatValue
+end
+
 defmodule Openfmb.Commonmodule.PFSPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :bool, deprecated: false
   field :pFParameter, 2, type: Openfmb.Commonmodule.OperationDFPF, deprecated: false
@@ -1308,7 +1478,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseAPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.ControlAPC
   field :phsA, 2, type: Openfmb.Commonmodule.ControlAPC
@@ -1318,14 +1489,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_DbPosKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.DbPosKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.StatusDPS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: Openfmb.Commonmodule.DbPosKind, enum: true, deprecated: false
@@ -1334,7 +1507,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseDPS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.StatusDPS
   field :phsA, 2, type: Openfmb.Commonmodule.StatusDPS
@@ -1344,7 +1518,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseINS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.StatusINS
   field :phsA, 2, type: Openfmb.Commonmodule.StatusINS
@@ -1354,7 +1529,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseISC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.ControlISC
   field :phsA, 2, type: Openfmb.Commonmodule.ControlISC
@@ -1364,7 +1540,8 @@ end
 
 defmodule Openfmb.Commonmodule.ReadingMMTN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :DmdVAh, 2, type: Openfmb.Commonmodule.BCR
@@ -1380,7 +1557,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseMMTN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phsA, 1, type: Openfmb.Commonmodule.ReadingMMTN
   field :phsAB, 2, type: Openfmb.Commonmodule.ReadingMMTN
@@ -1392,14 +1570,16 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_RecloseActionKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.RecloseActionKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.PhaseRecloseAction do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.Optional_RecloseActionKind
   field :phsA, 2, type: Openfmb.Commonmodule.Optional_RecloseActionKind
@@ -1409,7 +1589,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseSPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.ControlSPC
   field :phsA, 2, type: Openfmb.Commonmodule.ControlSPC
@@ -1419,7 +1600,8 @@ end
 
 defmodule Openfmb.Commonmodule.PhaseSPS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :phs3, 1, type: Openfmb.Commonmodule.StatusSPS
   field :phsA, 2, type: Openfmb.Commonmodule.StatusSPS
@@ -1429,7 +1611,8 @@ end
 
 defmodule Openfmb.Commonmodule.PMG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :net, 1, type: Openfmb.Commonmodule.MV
   field :phsA, 2, type: Openfmb.Commonmodule.MV
@@ -1439,7 +1622,8 @@ end
 
 defmodule Openfmb.Commonmodule.RampRate do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :negativeReactivePowerKVArPerMin, 1, type: Google.Protobuf.FloatValue
   field :negativeRealPowerKWPerMin, 2, type: Google.Protobuf.FloatValue
@@ -1447,16 +1631,79 @@ defmodule Openfmb.Commonmodule.RampRate do
   field :positiveRealPowerKWPerMin, 4, type: Google.Protobuf.FloatValue
 end
 
+defmodule Openfmb.Commonmodule.ReadingMENV do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
+  field :CO2Em, 2, type: Openfmb.Commonmodule.MV
+  field :COEm, 3, type: Openfmb.Commonmodule.MV
+  field :NOxEm, 4, type: Openfmb.Commonmodule.MV
+  field :SOxEm, 5, type: Openfmb.Commonmodule.MV
+  field :Dust, 6, type: Openfmb.Commonmodule.MV
+  field :Snd, 7, type: Openfmb.Commonmodule.MV
+  field :O2CmbuGas, 8, type: Openfmb.Commonmodule.MV
+  field :O3Air, 9, type: Openfmb.Commonmodule.MV
+end
+
 defmodule Openfmb.Commonmodule.ReadingMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.ReadingMMDC do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
+  field :Watt, 2, type: Openfmb.Commonmodule.MV
+  field :Amp, 3, type: Openfmb.Commonmodule.MV
+  field :Vol, 4, type: Openfmb.Commonmodule.MV
+  field :VolPsGnd, 5, type: Openfmb.Commonmodule.MV
+  field :VolNgGnd, 6, type: Openfmb.Commonmodule.MV
+  field :Ris, 7, type: Openfmb.Commonmodule.MV
+  field :RisPsGnd, 8, type: Openfmb.Commonmodule.MV
+  field :RisNgGnd, 9, type: Openfmb.Commonmodule.MV
+end
+
+defmodule Openfmb.Commonmodule.ReadingMMET do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
+  field :EnvTmp, 2, type: Openfmb.Commonmodule.MV
+  field :WetBlbTmp, 3, type: Openfmb.Commonmodule.MV
+  field :CloudCvr, 4, type: Openfmb.Commonmodule.MV
+  field :EnvHum, 5, type: Openfmb.Commonmodule.MV
+  field :DewPt, 6, type: Openfmb.Commonmodule.MV
+  field :DffInsol, 7, type: Openfmb.Commonmodule.MV
+  field :DctInsol, 8, type: Openfmb.Commonmodule.MV
+  field :DlDur, 9, type: Openfmb.Commonmodule.MV
+  field :HorInsol, 10, type: Openfmb.Commonmodule.MV
+  field :HorWdDir, 11, type: Openfmb.Commonmodule.MV
+  field :HorWdSpd, 12, type: Openfmb.Commonmodule.MV
+  field :VerWdDir, 13, type: Openfmb.Commonmodule.MV
+  field :VerWdSpd, 14, type: Openfmb.Commonmodule.MV
+  field :WdGustSpd, 15, type: Openfmb.Commonmodule.MV
+  field :EnvPres, 16, type: Openfmb.Commonmodule.MV
+  field :RnFll, 17, type: Openfmb.Commonmodule.MV
+  field :SnwDen, 18, type: Openfmb.Commonmodule.MV
+  field :SnwTmp, 19, type: Openfmb.Commonmodule.MV
+  field :SnwCvr, 20, type: Openfmb.Commonmodule.MV
+  field :SnwFll, 21, type: Openfmb.Commonmodule.MV
+  field :SnwEq, 22, type: Openfmb.Commonmodule.MV
+end
+
 defmodule Openfmb.Commonmodule.ReadingMMTR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :DmdVAh, 2, type: Openfmb.Commonmodule.BCR
@@ -1472,7 +1719,8 @@ end
 
 defmodule Openfmb.Commonmodule.WYE do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :net, 1, type: Openfmb.Commonmodule.CMV
   field :neut, 2, type: Openfmb.Commonmodule.CMV
@@ -1484,7 +1732,8 @@ end
 
 defmodule Openfmb.Commonmodule.ReadingMMXU do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :A, 2, type: Openfmb.Commonmodule.WYE
@@ -1499,9 +1748,42 @@ defmodule Openfmb.Commonmodule.ReadingMMXU do
   field :W, 11, type: Openfmb.Commonmodule.WYE
 end
 
+defmodule Openfmb.Commonmodule.Sensor do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
+end
+
+defmodule Openfmb.Commonmodule.SocLimit do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :socHighLimit, 1, type: Google.Protobuf.FloatValue
+  field :socHighLimitHysteresis, 2, type: Google.Protobuf.FloatValue
+  field :socLimitCtl, 3, type: Google.Protobuf.BoolValue
+  field :socLowLimit, 4, type: Google.Protobuf.FloatValue
+  field :socLowLimitHysteresis, 5, type: Google.Protobuf.FloatValue
+end
+
+defmodule Openfmb.Commonmodule.SOCManagement do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :socDeadBandMinus, 1, type: Google.Protobuf.FloatValue
+  field :socDeadBandPlus, 2, type: Google.Protobuf.FloatValue
+  field :socManagementCtl, 3, type: Google.Protobuf.BoolValue
+  field :socPowerSetPoint, 4, type: Google.Protobuf.FloatValue
+  field :socSetPoint, 5, type: Google.Protobuf.FloatValue
+end
+
 defmodule Openfmb.Commonmodule.SourceCapabilityConfiguration do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :AMax, 2, type: Openfmb.Commonmodule.ASG
@@ -1520,21 +1802,24 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_NorOpCatKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.NorOpCatKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_AbnOpCatKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.AbnOpCatKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.SourceCapabilityRatings do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :AbnOpCatRtg, 2, type: Openfmb.Commonmodule.AbnOpCatKind, enum: true, deprecated: false
@@ -1555,9 +1840,18 @@ defmodule Openfmb.Commonmodule.SourceCapabilityRatings do
   field :WUndExtRtgPF, 17, type: Openfmb.Commonmodule.ASG, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.SPG do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :setVal, 1, type: :bool, deprecated: false
+end
+
 defmodule Openfmb.Commonmodule.StatusAndEventXCBR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -1573,7 +1867,8 @@ end
 
 defmodule Openfmb.Commonmodule.StatusINC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: :int32, deprecated: false
@@ -1582,7 +1877,8 @@ end
 
 defmodule Openfmb.Commonmodule.StatusISC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: :int32, deprecated: false
@@ -1591,14 +1887,16 @@ end
 
 defmodule Openfmb.Commonmodule.StatusMessageInfo do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :messageInfo, 1, type: Openfmb.Commonmodule.MessageInfo, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.StatusValue do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :modBlk, 2, type: Google.Protobuf.BoolValue
@@ -1606,7 +1904,8 @@ end
 
 defmodule Openfmb.Commonmodule.VSS do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :q, 1, type: Openfmb.Commonmodule.Quality
   field :stVal, 2, type: :string, deprecated: false
@@ -1615,7 +1914,8 @@ end
 
 defmodule Openfmb.Commonmodule.StringEventAndStatusGGIO do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :Phase, 2, type: Openfmb.Commonmodule.Optional_PhaseCodeKind
@@ -1624,7 +1924,8 @@ end
 
 defmodule Openfmb.Commonmodule.SwitchPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :Pos, 1, type: Openfmb.Commonmodule.ControlDPC, deprecated: false
   field :startTime, 2, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
@@ -1632,14 +1933,16 @@ end
 
 defmodule Openfmb.Commonmodule.SwitchCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Commonmodule.SwitchPoint, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.TmHzPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :hzVal, 1, type: :float, deprecated: false
   field :tmVal, 2, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
@@ -1647,7 +1950,8 @@ end
 
 defmodule Openfmb.Commonmodule.TmHzCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :overCrvPts, 1, repeated: true, type: Openfmb.Commonmodule.TmHzPoint, deprecated: false
   field :underCrvPts, 2, repeated: true, type: Openfmb.Commonmodule.TmHzPoint, deprecated: false
@@ -1655,7 +1959,8 @@ end
 
 defmodule Openfmb.Commonmodule.TmVoltPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :tmVal, 1, type: Openfmb.Commonmodule.ClearingTime, deprecated: false
   field :voltVal, 2, type: :float, deprecated: false
@@ -1663,7 +1968,8 @@ end
 
 defmodule Openfmb.Commonmodule.TmVoltCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :overCrvPts, 1, repeated: true, type: Openfmb.Commonmodule.TmVoltPoint, deprecated: false
   field :underCrvPts, 2, repeated: true, type: Openfmb.Commonmodule.TmVoltPoint, deprecated: false
@@ -1671,15 +1977,47 @@ end
 
 defmodule Openfmb.Commonmodule.VarSPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :varParameter, 2, type: Openfmb.Commonmodule.OperationDVAR, deprecated: false
 end
 
+defmodule Openfmb.Commonmodule.VoltageRegulation do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :overVoltageDroop, 1, type: Google.Protobuf.FloatValue
+  field :underVoltageDroop, 2, type: Google.Protobuf.FloatValue
+  field :voltageDeadBandMinus, 3, type: Google.Protobuf.FloatValue
+  field :voltageDeadBandPlus, 4, type: Google.Protobuf.FloatValue
+  field :voltageSetPoint, 5, type: Google.Protobuf.FloatValue
+end
+
+defmodule Openfmb.Commonmodule.VoltageDroop do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :voltageDroopCtl, 1, type: Google.Protobuf.BoolValue
+  field :voltageRegulation, 2, type: Openfmb.Commonmodule.VoltageRegulation
+end
+
+defmodule Openfmb.Commonmodule.VoltagePI do
+  @moduledoc false
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :voltagePICtl, 1, type: Google.Protobuf.BoolValue
+  field :voltageRegulation, 2, type: Openfmb.Commonmodule.VoltageRegulation
+end
+
 defmodule Openfmb.Commonmodule.VoltVarPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :varVal, 1, type: :float, deprecated: false
   field :voltVal, 2, type: :float, deprecated: false
@@ -1687,7 +2025,8 @@ end
 
 defmodule Openfmb.Commonmodule.VoltVarCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Commonmodule.VoltVarPoint, deprecated: false
   field :vVarParameter, 2, type: Openfmb.Commonmodule.OperationDVVR, deprecated: false
@@ -1695,7 +2034,8 @@ end
 
 defmodule Openfmb.Commonmodule.VoltWPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :voltVal, 1, type: :float, deprecated: false
   field :wVal, 2, type: :float, deprecated: false
@@ -1703,7 +2043,8 @@ end
 
 defmodule Openfmb.Commonmodule.VoltWCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Commonmodule.VoltWPoint, deprecated: false
   field :voltWParameter, 2, type: Openfmb.Commonmodule.OperationDVWC, deprecated: false
@@ -1711,14 +2052,16 @@ end
 
 defmodule Openfmb.Commonmodule.VSC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ctlVal, 1, type: :string, deprecated: false
 end
 
 defmodule Openfmb.Commonmodule.WSPC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :modEna, 1, type: :bool, deprecated: false
   field :wParameter, 2, type: Openfmb.Commonmodule.OperationDWGC, deprecated: false
@@ -1726,7 +2069,8 @@ end
 
 defmodule Openfmb.Commonmodule.WVarPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :varVal, 1, type: :float, deprecated: false
   field :wVal, 2, type: :float, deprecated: false
@@ -1734,7 +2078,8 @@ end
 
 defmodule Openfmb.Commonmodule.WVarCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Commonmodule.WVarPoint, deprecated: false
   field :wVarParameter, 2, type: Openfmb.Commonmodule.OperationDWVR, deprecated: false
@@ -1742,63 +2087,72 @@ end
 
 defmodule Openfmb.Commonmodule.Optional_AlrmKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.AlrmKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_ControlModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.ControlModeKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_DirectionModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.DirectionModeKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_GridConnectionStateKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.GridConnectionStateKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_OperatingStateKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.OperatingStateKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_ReactivePowerControlKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.ReactivePowerControlKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_RealPowerControlKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.RealPowerControlKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_StateKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.StateKind, enum: true
 end
 
 defmodule Openfmb.Commonmodule.Optional_VoltLimitModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Commonmodule.VoltLimitModeKind, enum: true
 end

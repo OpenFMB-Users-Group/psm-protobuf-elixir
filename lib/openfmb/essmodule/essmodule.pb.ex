@@ -1,6 +1,7 @@
 defmodule Openfmb.Essmodule.ESSCapabilityConfiguration do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :sourceCapabilityConfiguration, 1,
     type: Openfmb.Commonmodule.SourceCapabilityConfiguration,
@@ -14,7 +15,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSCapabilityOverride do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :nameplateValue, 1, type: Openfmb.Commonmodule.NameplateValue, deprecated: false
 
@@ -25,7 +27,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSCapabilityOverrideProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
@@ -34,7 +37,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSCapabilityRatings do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :sourceCapabilityRatings, 1, type: Openfmb.Commonmodule.SourceCapabilityRatings, deprecated: false
   field :VAChaRteMaxRtg, 2, type: Openfmb.Commonmodule.ASG, deprecated: false
@@ -46,7 +50,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSCapability do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :nameplateValue, 1, type: Openfmb.Commonmodule.NameplateValue, deprecated: false
   field :essCapabilityRatings, 2, type: Openfmb.Essmodule.ESSCapabilityRatings, deprecated: false
@@ -55,112 +60,32 @@ end
 
 defmodule Openfmb.Essmodule.ESSCapabilityProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :capabilityMessageInfo, 1, type: Openfmb.Commonmodule.CapabilityMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
   field :essCapability, 3, type: Openfmb.Essmodule.ESSCapability, deprecated: false
 end
 
-defmodule Openfmb.Essmodule.FrequencyRegulation do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :frequencyDeadBandMinus, 1, type: Google.Protobuf.FloatValue
-  field :frequencyDeadBandPlus, 2, type: Google.Protobuf.FloatValue
-  field :frequencyRegulationCtl, 3, type: Google.Protobuf.BoolValue
-  field :frequencySetPoint, 4, type: Google.Protobuf.FloatValue
-  field :gridFrequencyStableBandMinus, 5, type: Google.Protobuf.FloatValue
-  field :gridFrequencyStableBandPlus, 6, type: Google.Protobuf.FloatValue
-  field :overFrequencyDroop, 7, type: Google.Protobuf.FloatValue
-  field :underFrequencyDroop, 8, type: Google.Protobuf.FloatValue
-end
-
-defmodule Openfmb.Essmodule.PeakShaving do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :baseShavingLimit, 1, type: Google.Protobuf.FloatValue
-  field :peakShavingCtl, 2, type: Google.Protobuf.BoolValue
-  field :peakShavingLimit, 3, type: Google.Protobuf.FloatValue
-  field :socManagementAllowedHighLimit, 4, type: Google.Protobuf.FloatValue
-  field :socManagementAllowedLowLimit, 5, type: Google.Protobuf.FloatValue
-end
-
-defmodule Openfmb.Essmodule.SocLimit do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :socHighLimit, 1, type: Google.Protobuf.FloatValue
-  field :socHighLimitHysteresis, 2, type: Google.Protobuf.FloatValue
-  field :socLimitCtl, 3, type: Google.Protobuf.BoolValue
-  field :socLowLimit, 4, type: Google.Protobuf.FloatValue
-  field :socLowLimitHysteresis, 5, type: Google.Protobuf.FloatValue
-end
-
-defmodule Openfmb.Essmodule.SOCManagement do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :socDeadBandMinus, 1, type: Google.Protobuf.FloatValue
-  field :socDeadBandPlus, 2, type: Google.Protobuf.FloatValue
-  field :socManagementCtl, 3, type: Google.Protobuf.BoolValue
-  field :socPowerSetPoint, 4, type: Google.Protobuf.FloatValue
-  field :socSetPoint, 5, type: Google.Protobuf.FloatValue
-end
-
-defmodule Openfmb.Essmodule.VoltageRegulation do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :overVoltageDroop, 1, type: Google.Protobuf.FloatValue
-  field :underVoltageDroop, 2, type: Google.Protobuf.FloatValue
-  field :voltageDeadBandMinus, 3, type: Google.Protobuf.FloatValue
-  field :voltageDeadBandPlus, 4, type: Google.Protobuf.FloatValue
-  field :voltageSetPoint, 5, type: Google.Protobuf.FloatValue
-end
-
-defmodule Openfmb.Essmodule.VoltageDroop do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :voltageDroopCtl, 1, type: Google.Protobuf.BoolValue
-  field :voltageRegulation, 2, type: Openfmb.Essmodule.VoltageRegulation
-end
-
-defmodule Openfmb.Essmodule.VoltagePI do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :voltagePICtl, 1, type: Google.Protobuf.BoolValue
-  field :voltageRegulation, 2, type: Openfmb.Essmodule.VoltageRegulation
-end
-
-defmodule Openfmb.Essmodule.CapacityFirming do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
-
-  field :capacityFirmingCtl, 1, type: Google.Protobuf.BoolValue
-  field :limitNegative_dp_dt, 2, type: Google.Protobuf.FloatValue, json_name: "limitNegativeDpDt"
-  field :limitPositive_dp_dt, 3, type: Google.Protobuf.FloatValue, json_name: "limitPositiveDpDt"
-end
-
 defmodule Openfmb.Essmodule.ESSFunction do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
 
-  field :capacityFirming, 1, type: Openfmb.Essmodule.CapacityFirming
-  field :frequencyRegulation, 2, type: Openfmb.Essmodule.FrequencyRegulation
-  field :peakShaving, 3, type: Openfmb.Essmodule.PeakShaving
-  field :socLimit, 4, type: Openfmb.Essmodule.SocLimit
-  field :socManagement, 5, type: Openfmb.Essmodule.SOCManagement
-  field :voltageDroop, 6, type: Openfmb.Essmodule.VoltageDroop
-  field :voltagePI, 7, type: Openfmb.Essmodule.VoltagePI
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
+
+  field :capacityFirming, 1, type: Openfmb.Commonmodule.CapacityFirming
+  field :frequencyRegulation, 2, type: Openfmb.Commonmodule.FrequencyRegulation
+  field :peakShaving, 3, type: Openfmb.Commonmodule.PeakShaving
+  field :socLimit, 4, type: Openfmb.Commonmodule.SocLimit
+  field :socManagement, 5, type: Openfmb.Commonmodule.SOCManagement
+  field :voltageDroop, 6, type: Openfmb.Commonmodule.VoltageDroop
+  field :voltagePI, 7, type: Openfmb.Commonmodule.VoltagePI
 end
 
 defmodule Openfmb.Essmodule.ESSPoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.ControlSPC
   field :function, 3, type: Openfmb.Essmodule.ESSFunction
@@ -184,7 +109,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSCurvePoint do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :control, 1, type: Openfmb.Essmodule.ESSPoint, deprecated: false
   field :startTime, 2, type: Openfmb.Commonmodule.ControlTimestamp, deprecated: false
@@ -192,21 +118,24 @@ end
 
 defmodule Openfmb.Essmodule.ESSCSG do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :crvPts, 1, repeated: true, type: Openfmb.Essmodule.ESSCurvePoint, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.ESSControlScheduleFSCH do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :ValDCSG, 1, type: Openfmb.Essmodule.ESSCSG, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.EssControlFSCC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlFSCC, 1, type: Openfmb.Commonmodule.ControlFSCC, deprecated: false
   field :essControlScheduleFSCH, 2, type: Openfmb.Essmodule.ESSControlScheduleFSCH
@@ -214,7 +143,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -223,7 +153,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
@@ -232,7 +163,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSDiscreteControlDBAT do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
   field :control, 2, type: Openfmb.Essmodule.ESSPoint
@@ -240,7 +172,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSDiscreteControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -249,7 +182,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSDiscreteControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
@@ -258,7 +192,8 @@ end
 
 defmodule Openfmb.Essmodule.EssEventZBAT do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -275,7 +210,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSPointStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :blackStartEnabled, 1, type: Openfmb.Commonmodule.StatusSPS
   field :frequencySetPointEnabled, 2, type: Openfmb.Commonmodule.StatusSPS
@@ -304,7 +240,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSEventAndStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -314,19 +251,22 @@ defmodule Openfmb.Essmodule.ESSEventAndStatusZGEN do
   field :DynamicTest, 3, type: Openfmb.Commonmodule.ENS_DynamicTestKind
   field :EmgStop, 4, type: Openfmb.Commonmodule.StatusSPS
   field :GnSynSt, 5, type: Openfmb.Commonmodule.StatusSPS
-  field :PointStatus, 6, type: Openfmb.Essmodule.ESSPointStatus
+  field :Alrm, 6, type: Openfmb.Commonmodule.Optional_AlrmKind
+  field :PointStatus, 7, type: Openfmb.Essmodule.ESSPointStatus
 end
 
 defmodule Openfmb.Essmodule.ESSEventZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eSSEventAndStatusZGEN, 1, type: Openfmb.Essmodule.ESSEventAndStatusZGEN, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.ESSEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventValue, 1, type: Openfmb.Commonmodule.EventValue, deprecated: false
   field :essEventZBAT, 2, type: Openfmb.Essmodule.EssEventZBAT
@@ -335,7 +275,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
@@ -344,7 +285,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipmentTerminalReading, 1,
     type: Openfmb.Commonmodule.ConductingEquipmentTerminalReading,
@@ -353,11 +295,13 @@ defmodule Openfmb.Essmodule.ESSReading do
   field :phaseMMTN, 2, type: Openfmb.Commonmodule.PhaseMMTN
   field :readingMMTR, 3, type: Openfmb.Commonmodule.ReadingMMTR
   field :readingMMXU, 4, type: Openfmb.Commonmodule.ReadingMMXU
+  field :readingMMDC, 5, type: Openfmb.Commonmodule.ReadingMMDC
 end
 
 defmodule Openfmb.Essmodule.ESSReadingProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :readingMessageInfo, 1, type: Openfmb.Commonmodule.ReadingMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false
@@ -366,7 +310,8 @@ end
 
 defmodule Openfmb.Essmodule.EssStatusZBAT do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForEventAndStatus, 1,
     type: Openfmb.Commonmodule.LogicalNodeForEventAndStatus,
@@ -382,14 +327,16 @@ end
 
 defmodule Openfmb.Essmodule.ESSStatusZGEN do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eSSEventAndStatusZGEN, 1, type: Openfmb.Essmodule.ESSEventAndStatusZGEN, deprecated: false
 end
 
 defmodule Openfmb.Essmodule.ESSStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusValue, 1, type: Openfmb.Commonmodule.StatusValue, deprecated: false
   field :essStatusZBAT, 2, type: Openfmb.Essmodule.EssStatusZBAT
@@ -398,7 +345,8 @@ end
 
 defmodule Openfmb.Essmodule.ESSStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :ess, 2, type: Openfmb.Commonmodule.ESS, deprecated: false

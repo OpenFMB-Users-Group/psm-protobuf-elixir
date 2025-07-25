@@ -1,6 +1,7 @@
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentServiceModeKind do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, enum: true, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :CircuitSegmentServiceModeKind_UNDEFINED, 0
   field :CircuitSegmentServiceModeKind_none, 1
@@ -13,14 +14,16 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.Optional_CircuitSegmentServiceModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :value, 1, type: Openfmb.Circuitsegmentservicemodule.CircuitSegmentServiceModeKind, enum: true
 end
 
 defmodule Openfmb.Circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :setVal, 1,
     type: Openfmb.Circuitsegmentservicemodule.CircuitSegmentServiceModeKind,
@@ -32,7 +35,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentControlDCSC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNodeForControl, 1, type: Openfmb.Commonmodule.LogicalNodeForControl, deprecated: false
 
@@ -44,7 +48,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -56,7 +61,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :applicationSystem, 2, type: Openfmb.Commonmodule.ApplicationSystem, deprecated: false
@@ -68,7 +74,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentEventDCSC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
 
@@ -85,7 +92,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 
@@ -96,7 +104,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :applicationSystem, 2, type: Openfmb.Commonmodule.ApplicationSystem, deprecated: false
@@ -108,7 +117,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentStatusDCSC do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
 
@@ -125,7 +135,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :identifiedObject, 1, type: Openfmb.Commonmodule.IdentifiedObject, deprecated: false
 
@@ -136,7 +147,8 @@ end
 
 defmodule Openfmb.Circuitsegmentservicemodule.CircuitSegmentStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :applicationSystem, 2, type: Openfmb.Commonmodule.ApplicationSystem, deprecated: false

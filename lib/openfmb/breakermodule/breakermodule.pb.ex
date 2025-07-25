@@ -1,13 +1,15 @@
 defmodule Openfmb.Breakermodule.BreakerDiscreteControlXCBR do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :discreteControlXCBR, 1, type: Openfmb.Commonmodule.DiscreteControlXCBR, deprecated: false
 end
 
 defmodule Openfmb.Breakermodule.BreakerDiscreteControl do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlValue, 1, type: Openfmb.Commonmodule.ControlValue, deprecated: false
   field :check, 2, type: Openfmb.Commonmodule.CheckConditions
@@ -16,14 +18,16 @@ end
 
 defmodule Openfmb.Breakermodule.Breaker do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipment, 1, type: Openfmb.Commonmodule.ConductingEquipment, deprecated: false
 end
 
 defmodule Openfmb.Breakermodule.BreakerDiscreteControlProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :breaker, 2, type: Openfmb.Breakermodule.Breaker, deprecated: false
@@ -32,7 +36,8 @@ end
 
 defmodule Openfmb.Breakermodule.BreakerEvent do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventValue, 1, type: Openfmb.Commonmodule.EventValue, deprecated: false
   field :statusAndEventXCBR, 2, type: Openfmb.Commonmodule.StatusAndEventXCBR
@@ -40,7 +45,8 @@ end
 
 defmodule Openfmb.Breakermodule.BreakerEventProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :eventMessageInfo, 1, type: Openfmb.Commonmodule.EventMessageInfo, deprecated: false
   field :breaker, 2, type: Openfmb.Breakermodule.Breaker, deprecated: false
@@ -49,7 +55,8 @@ end
 
 defmodule Openfmb.Breakermodule.BreakerReading do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :conductingEquipmentTerminalReading, 1,
     type: Openfmb.Commonmodule.ConductingEquipmentTerminalReading,
@@ -59,11 +66,13 @@ defmodule Openfmb.Breakermodule.BreakerReading do
   field :phaseMMTN, 3, type: Openfmb.Commonmodule.PhaseMMTN
   field :readingMMTR, 4, type: Openfmb.Commonmodule.ReadingMMTR
   field :readingMMXU, 5, type: Openfmb.Commonmodule.ReadingMMXU
+  field :readingMMDC, 6, type: Openfmb.Commonmodule.ReadingMMDC
 end
 
 defmodule Openfmb.Breakermodule.BreakerReadingProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :readingMessageInfo, 1, type: Openfmb.Commonmodule.ReadingMessageInfo, deprecated: false
   field :breaker, 2, type: Openfmb.Breakermodule.Breaker, deprecated: false
@@ -72,7 +81,8 @@ end
 
 defmodule Openfmb.Breakermodule.BreakerStatus do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusValue, 1, type: Openfmb.Commonmodule.StatusValue, deprecated: false
   field :statusAndEventXCBR, 2, type: Openfmb.Commonmodule.StatusAndEventXCBR
@@ -80,7 +90,8 @@ end
 
 defmodule Openfmb.Breakermodule.BreakerStatusProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :statusMessageInfo, 1, type: Openfmb.Commonmodule.StatusMessageInfo, deprecated: false
   field :breaker, 2, type: Openfmb.Breakermodule.Breaker, deprecated: false

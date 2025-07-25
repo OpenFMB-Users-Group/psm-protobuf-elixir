@@ -1,6 +1,7 @@
 defmodule Openfmb.Reservemodule.ReserveMargin do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :logicalNode, 1, type: Openfmb.Commonmodule.LogicalNode, deprecated: false
   field :A, 2, type: Openfmb.Commonmodule.PMG
@@ -11,7 +12,8 @@ end
 
 defmodule Openfmb.Reservemodule.ReserveAvailability do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :incrementalMargin, 1, type: Openfmb.Reservemodule.ReserveMargin
   field :margin, 2, type: Openfmb.Reservemodule.ReserveMargin
@@ -20,7 +22,8 @@ end
 
 defmodule Openfmb.Reservemodule.AllocatedMargin do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :requestID, 1, type: :string, deprecated: false
   field :allocatedMargin, 2, type: Openfmb.Reservemodule.ReserveMargin
@@ -29,7 +32,8 @@ end
 
 defmodule Openfmb.Reservemodule.ReserveAvailabilityProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
   field :allocatedMargin, 2, type: Openfmb.Reservemodule.AllocatedMargin
@@ -49,7 +53,8 @@ end
 
 defmodule Openfmb.Reservemodule.ReserveRequest do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :requestID, 1, type: :string, deprecated: false
   field :margin, 2, type: Openfmb.Reservemodule.ReserveMargin
@@ -58,7 +63,8 @@ end
 
 defmodule Openfmb.Reservemodule.ReserveRequestProfile do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+
+  use Protobuf, protoc_gen_elixir_version: "0.15.0", syntax: :proto3
 
   field :controlMessageInfo, 1, type: Openfmb.Commonmodule.ControlMessageInfo, deprecated: false
 
